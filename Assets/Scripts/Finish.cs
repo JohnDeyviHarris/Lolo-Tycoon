@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Finish : MonoBehaviour
 {
-    [SerializeField] private HaveCoin Manager;
-    public void Finisher(int cost)
+    private void OnCollisionEnter(Collision collision)
     {
-        Manager.GetMoney(cost);
+        if (collision.gameObject.TryGetComponent<LoloCoin>(out LoloCoin scr))
+        {
+            CoinManager.GetMoney(scr.cost);
+            Destroy(collision.gameObject);
+        }
     }
 }
