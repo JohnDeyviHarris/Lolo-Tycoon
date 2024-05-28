@@ -1,0 +1,34 @@
+{
+    "name": "Karta s molniey",
+    "maps": [
+        {
+            "name": "PlayerMovement",
+            "id": "2f8ab080-45f2-4e42-9445-4769dddddf2b",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "e8cf1b32-5cd1-4228-a336-a73d384dfe4b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "cfa61afe-7cc0-4716-909b-c17aa3198dd8",
+                    "path": "<Joystick>/stick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
